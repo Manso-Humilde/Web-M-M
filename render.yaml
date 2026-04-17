@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: web-m-m
+    runtime: static
+    buildCommand: echo "No build needed"
+    staticPublishPath: ./
+    publish: ./
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: no-cache
