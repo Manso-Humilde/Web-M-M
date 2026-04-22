@@ -5717,12 +5717,13 @@ textarea.form-control-lg {
 .navbar-brand:hover {
     transform: scale(1.02) !important;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.15) !important;
+    color: #cc6600 !important;
 }
 
 /* En móviles, el hover no aplica, pero podemos darle un color más destacado */
 @media (max-width: 768px) {
     .navbar-brand {
-        color: #cc6600 !important;
+        color: #000000 !important;
         font-weight: 800 !important;
     }
 }
