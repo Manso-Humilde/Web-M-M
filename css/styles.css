@@ -11457,6 +11457,48 @@ header.masthead h1, header.masthead .h1 {
   opacity: 1;
 }
 
+/* Mejoras para el navbar en móviles */
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 0.9rem !important;
+        white-space: normal !important;
+        word-wrap: break-word !important;
+        max-width: 200px !important;
+        line-height: 1.2 !important;
+    }
+
+    #mainNav .container {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+}
+
+/* Ajuste adicional para pantallas muy pequeñas */
+@media (max-width: 380px) {
+    .navbar-brand {
+        font-size: 0.8rem !important;
+        max-width: 160px !important;
+    }
+}
+
+/* Asegurar que el navbar use flexbox correctamente */
+#mainNav .container {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+/* Grid para la sección de servicios - ya está usando Bootstrap grid,
+   pero podemos mejorarlo para móviles */
+@media (max-width: 768px) {
+    #services .row {
+        display: grid !important;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+        gap: 20px !important;
+    }
+}
+
 /* Mejoras para la tarjeta de perfil profesional */
 .card {
     border-radius: 15px !important;
