@@ -11527,3 +11527,115 @@ header.masthead h1, header.masthead .h1 {
         font-size: 0.8rem !important;
     }
 }
+
+/* ==================== FIX RESPONSIVE MÓVILES ==================== */
+
+/* Asegurar que el viewport se respete */
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
+
+/* Contenedores fluidos en móviles */
+@media (max-width: 768px) {
+    .container,
+    .container-fluid,
+    .container-sm,
+    .container-md,
+    .container-lg,
+    .container-xl {
+        width: 100% !important;
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+
+    /* Forzar que las imágenes no se desborden */
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    /* Ajustar tamaños de fuente para móviles */
+    h1 {
+        font-size: 1.8rem !important;
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
+    }
+
+    .navbar-brand {
+        font-size: 0.9rem !important;
+        white-space: normal !important;
+        word-wrap: break-word !important;
+    }
+
+    /* Asegurar que el menú colapsado funcione */
+    .navbar-collapse {
+        max-height: 80vh !important;
+        overflow-y: auto !important;
+    }
+
+    /* Ajustar padding en secciones */
+    .page-section {
+        padding: 4rem 0 !important;
+    }
+
+    .masthead {
+        min-height: 100vh !important;
+    }
+}
+
+/* Fix para pantallas muy pequeñas */
+@media (max-width: 375px) {
+    .navbar-brand {
+        font-size: 0.75rem !important;
+        max-width: 140px !important;
+    }
+
+    h1 {
+        font-size: 1.5rem !important;
+    }
+
+    .btn-xl {
+        padding: 0.8rem 1.5rem !important;
+        font-size: 0.9rem !important;
+    }
+}
+
+/* Asegurar que las columnas de Bootstrap funcionen */
+.row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    margin-right: -15px !important;
+    margin-left: -15px !important;
+}
+
+[class*="col-"] {
+    position: relative !important;
+    width: 100% !important;
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+}
+
+/* Fix específico para la sección de servicios en móvil */
+@media (max-width: 768px) {
+    #services .col-lg-3 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    #portfolio .col-lg-4 {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+    }
+}
+
+@media (max-width: 576px) {
+    #portfolio .col-sm-6 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+}
