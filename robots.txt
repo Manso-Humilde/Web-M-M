@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /assets/vendor/
+
+# Crawl-delay para evitar sobrecarga
+Crawl-delay: 10
+
+# Sitemap será añadido próximamente
